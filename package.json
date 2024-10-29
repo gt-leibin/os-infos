@@ -6,7 +6,8 @@
     "types": "dist/index.d.ts",
     "version": "0.1.1",
     "scripts": {
-        "start": "ts-node bin/index.ts",
+        "start": "dist/bin/index.js",
+        "prestart": "pnpm run build",
         "build": "tsc",
         "prepublishOnly": "npm run build"
     },
