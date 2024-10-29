@@ -1,10 +1,20 @@
 {
-  "name": "os-infos",
-  "bin": "./bin/index.js",
-  "main": "index.js",
-  "version": "0.1.1",
-  "scripts": {},
-  "engines": {
-    "node": ">=16.18.1"
-  }
+    "name": "os-infos",
+    "bin": "./dist/bin/index.js",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "dist/index.d.ts",
+    "version": "0.1.1",
+    "scripts": {
+        "start": "ts-node bin/index.ts",
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "engines": {
+        "node": ">=16.18.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.8.2",
+        "typescript": "^5.6.3"
+    }
 }

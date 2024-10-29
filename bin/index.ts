@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const getOSInfos = require('../lib/osInfos');
+import { getOSInfos } from "../lib/osInfos";
 
 const {
     nodejsVersion,
