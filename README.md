@@ -1,23 +1,23 @@
-# os-info
+# os-infos
 
 快速输出系统相关信息
 
 安装
 ```
-npm install os-info
-yarn add os-info
-pnpm install os-info
+npm install os-infos
+yarn add os-infos
+pnpm install os-infos
 ```
 
  ## 使用
 1. 命令行快速输出系统信息
 ```
-npx os-info
+npx os-infos
 ```
 
 2. 在文件中引入
 ```
-const osInfo = require('os-info');
+const osInfo = require('os-infos');
 console.log(osInfo());
 ```
 

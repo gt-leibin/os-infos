@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const getOSInfo = require('../lib/osInfo');
+const getOSInfos = require('../lib/osInfos');
 
 const {
     nodejsVersion,
@@ -10,7 +10,7 @@ const {
     freememBytes,
     totalmemBytes,
     archInfoStr
-} = getOSInfo();
+} = getOSInfos();
 
 console.log('---------系统信息--------');
 console.log('nodejs版本:', nodejsVersion);
