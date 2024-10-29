@@ -17,7 +17,7 @@ npx os-infos
 
 2. 在文件中引入
 ```
-const osInfo = require('os-infos');
+import {getOSInfos} from 'os-infos';
 console.log(osInfo());
 ```
 
