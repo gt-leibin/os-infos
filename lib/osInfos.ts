@@ -5,7 +5,7 @@ import {CpuInfo, cpus, freemem, totalmem, arch} from 'os';
 export interface IOSInfos {
     nodejsVersion: string,
     osType: string,
-    cpuItems: CpuInfo[],
+    cpuLength: number,
     cpuItem: CpuInfo,
     freememBytes: number,
     totalmemBytes: number,
@@ -27,7 +27,7 @@ export function getOSInfos(): IOSInfos {
     return {
         nodejsVersion: process.version,
         osType: process.platform,
-        cpuItems,
+        cpuLength: cpuItems.length,
         cpuItem,
         freememBytes,
         totalmemBytes,

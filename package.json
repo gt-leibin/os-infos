@@ -11,7 +11,6 @@
     ],
     "scripts": {
         "start": "dist/bin/index.js",
-        "prestart": "pnpm run build",
         "build": "tsc",
         "prepublishOnly": "npm run build"
     },
