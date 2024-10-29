@@ -1,0 +1,11 @@
+{
+  "name": "os-info",
+  "bin": "./bin/index.js",
+  "main": "index.js",
+  "version": "0.1.0",
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=16.18.1"
+  }
+}
